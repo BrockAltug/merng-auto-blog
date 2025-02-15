@@ -11,10 +11,21 @@ const typeDefs = `
     user: User
   }
 
+  type Blog {
+    id: ID!
+    title: String!
+    content: String!
+    image: String!
+    createdAt: String!
+    seo_keywords: [String]
+  }
+
   type Query {
     users: [User]
     user(username: String!): User
     me: User
+    getAllBlogs: [Blog]  # ✅ Fetch all blog posts
+    getBlog(id: ID!): Blog  # ✅ Fetch a single blog post
   }
 
   type Mutation {

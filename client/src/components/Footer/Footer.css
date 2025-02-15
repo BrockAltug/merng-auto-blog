@@ -1,0 +1,110 @@
+/* Consistent dark grey and bluish cyan theme */
+:root {
+    --primary-color: #2A2E35; /* Dark Grey */
+    --secondary-color: #00A8E8; /* Bluish Cyan */
+    --text-color: #E0E0E0; /* Light Grey */
+    --hover-color: #0090C1; /* Slightly darker Cyan */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-top: 2rem;
+    padding: 2rem 0;
+    box-shadow: 0 -4px 6px var(--shadow-color);
+    border-top: 2px solid var(--secondary-color);
+}
+
+.footer-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* ✅ Back Button - Fixed Colors */
+.back-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.back-button .icon {
+    font-size: 1.2rem;
+    color: var(--primary-color); /* Ensures icon matches the theme */
+    transition: color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.back-button:hover .icon {
+    color: var(--text-color); /* Ensures icon changes to match the hover state */
+}
+
+/* ✅ Social Media Buttons */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.social-button:hover .icon {
+    color: var(--text-color);
+}
+
+/* Copyright */
+.footer-rights {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+}

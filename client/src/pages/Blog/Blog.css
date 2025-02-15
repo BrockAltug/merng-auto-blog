@@ -1,0 +1,72 @@
+/* Consistent dark grey and bluish cyan theme */
+:root {
+    --primary-color: #2A2E35; /* Dark Grey */
+    --secondary-color: #00A8E8; /* Bluish Cyan */
+    --text-color: #E0E0E0; /* Light Grey */
+    --hover-color: #0090C1; /* Slightly darker Cyan */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+.blog-container {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    padding: 40px;
+}
+
+.blog-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* ✅ Responsive Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ✅ Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* ✅ Pagination Buttons */
+.pagination-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin: 0 10px;
+}
+
+.pagination-btn:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* ✅ Disabled Pagination Buttons */
+.pagination-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ✅ Page Number */
+.page-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
