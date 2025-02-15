@@ -1,0 +1,109 @@
+/* Consistent dark grey and bluish cyan theme */
+:root {
+    --primary-color: #2A2E35; /* Dark Grey */
+    --secondary-color: #00A8E8; /* Bluish Cyan */
+    --text-color: #E0E0E0; /* Light Grey */
+    --hover-color: #0090C1; /* Slightly darker Cyan */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --error-color: #E63946; /* Red for error messages */
+}
+
+/* ✅ Login Page Container */
+.login-container {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ✅ Login Card */
+.login-card {
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+/* ✅ Title */
+.login-title {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* ✅ Input Fields */
+.login-inputs {
+    margin-bottom: 1.5rem;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--shadow-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.login-input::placeholder {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* ✅ Buttons */
+.login-button {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* ✅ Success Message */
+.login-success {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* ✅ Error Message */
+.login-error {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--error-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ✅ Links */
+.login-link {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    color: var(--hover-color);
+}
