@@ -1,0 +1,87 @@
+/* Consistent dark grey and bluish cyan theme */
+:root {
+    --primary-color: #2A2E35; /* Dark Grey */
+    --secondary-color: #00A8E8; /* Bluish Cyan */
+    --text-color: #E0E0E0; /* Light Grey */
+    --hover-color: #0090C1; /* Slightly darker Cyan */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Header */
+.header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* ✅ Header Container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ✅ Logo */
+.header-logo {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none; /* ✅ No underline */
+}
+
+.header-logo:hover {
+    color: var(--secondary-color);
+    text-decoration: none; /* ✅ Ensures no underline */
+}
+
+/* ✅ Subtitle */
+.header-subtitle {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+/* ✅ Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ✅ Navigation Buttons */
+.nav-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    text-decoration: none; /* ✅ No underline */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+    text-decoration: none; /* ✅ Ensures no underline */
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+}
