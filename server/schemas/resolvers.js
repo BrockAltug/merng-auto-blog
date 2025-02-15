@@ -1,6 +1,6 @@
-const { User } = require("../models");
+const { User, Blog } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
-const sendVerificationEmail = require("../utils/nodemailer"); // ✅ Import Nodemailer
+const sendVerificationEmail = require("../utils/nodemailer");
 
 const resolvers = {
   Query: {
@@ -15,6 +15,12 @@ const resolvers = {
         return await User.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError("You need to be logged in!");
+    },
+    getAllBlogs: async () => {
+      return await Blog.find().sort({ createdAt: -1 }); // Fetch latest blogs first
+    },
+    getBlog: async (_, { id }) => {
+      return await Blog.findById(id);
     },
   },
 
