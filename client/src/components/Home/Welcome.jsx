@@ -5,8 +5,8 @@ const Welcome = () => {
   return (
     <main className="home-container">
       <div className="home-card">
-        <h1 className="home-title">Welcome to Nexus!</h1>
-        <p className="home-subtitle">Connect and explore seamlessly.</p>
+        <h1 className="home-title">Welcome!</h1>
+        <p className="home-subtitle">In Development. Check Things Out!</p>
         <div>
           <Link to="/signup" className="home-button">
             Sign Up
