@@ -1,1 +1,0 @@
-# merng-auto-blog
