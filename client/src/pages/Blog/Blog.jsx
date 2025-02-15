@@ -32,7 +32,7 @@ const Blog = () => {
 
     return (
         <div className="blog-container">
-            <h1 className="blog-title">Latest Blog Posts</h1>
+            <h1 className="blog-title">Latest News</h1>
             <div className="blog-grid">
                 {currentBlogs.length > 0 ? (
                     currentBlogs.map((blog) => (

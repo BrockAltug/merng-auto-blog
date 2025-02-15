@@ -29,7 +29,7 @@ const BlogPost = () => {
 
     return (
         <div className="blog-post-container">
-            <Link to="/blog" className="back-button">← Back to Blog</Link> {/* ✅ Added Back Button */}
+            <Link to="/blog" className="back-button">← Back to News</Link> {/* ✅ Added Back Button */}
             <h1 className="blog-post-title">{cleanText(title)}</h1>
             <p className="blog-post-date">Published on {new Date(parseInt(createdAt)).toLocaleDateString()}</p>
             <img className="blog-post-image" src={image} alt={title} />

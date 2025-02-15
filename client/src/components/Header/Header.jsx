@@ -23,7 +23,7 @@ const Header = () => {
 
         {/* ✅ Navigation Links */}
         <div className="nav-links">
-          <Link to="/blog" className="nav-button">Blog</Link>
+          <Link to="/blog" className="nav-button">News</Link>
           
           {Auth.loggedIn() ? (
             <>
