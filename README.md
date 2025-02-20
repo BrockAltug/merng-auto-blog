@@ -30,7 +30,7 @@ This **AI-Powered Auto Blog** system is a **MERN-stack** (MongoDB, Express.js, R
   ![Dashboard](./public/assets/ss2.png)
 
 - **Blog List Page**  
-  ![List](./public/assets/ss3.png)
+  ![List](./public/assets/sss3.png)
 
 ---
 
